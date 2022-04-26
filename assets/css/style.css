@@ -150,6 +150,7 @@ html,
 body {
   background: #fff;
   font-family: "Poppins", sans-serif;
+  font-weight: 600;
 }
 
 ::selection {
@@ -215,11 +216,11 @@ body {
 .main-button a {
   display: inline-block;
   font-size: 15px;
-  padding: 12px 20px;
+  padding: 12px 10px;
   background-color: #ed563b;
   color: #fff;
   text-align: center;
-  font-weight: 400;
+  font-weight: 600;
   text-transform: uppercase;
   transition: all 0.3s;
 }
@@ -328,7 +329,7 @@ header
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 500;
-  font-size: 13px;
+  font-size: 14px;
   color: #7a7a7a;
   text-transform: uppercase;
   -webkit-transition: all 0.3s ease 0s;
@@ -339,15 +340,17 @@ header
   line-height: 40px;
   border: transparent;
   letter-spacing: 1px;
+  font-weight: 600;
 }
 
 .header-area .main-nav .nav li a {
   color: #fff;
+  font-weight: 600;
 }
 
 .header-area .main-nav .nav li:last-child a {
   display: inline-block;
-  font-size: 13px;
+  font-size: 14px;
   padding: 11px 17px;
   background-color: #ed563b;
   color: #fff;
@@ -358,23 +361,27 @@ header
   transition: all 0.3s;
   height: auto;
   line-height: 20px;
+  font-weight: 600;
 }
 
 .header-area .main-nav .nav li:last-child a:hover {
   background-color: #f9735b;
   opacity: 1;
+  font-weight: 600;
 }
 
 .header-area .main-nav .nav li:hover a,
 .header-area .main-nav .nav li a.active {
   color: #ed563b !important;
   opacity: 1;
+  font-weight: 600;
 }
 
 .background-header .main-nav .nav li:hover a,
 .background-header .main-nav .nav li a.active {
   color: #ed563b !important;
   opacity: 1;
+  font-weight: 600;
 }
 
 .header-area .main-nav .menu-trigger {
@@ -639,7 +646,7 @@ banner
   position: relative;
 }
 
-#bg-video {
+#bg-img {
   min-width: 100%;
   min-height: 100vh;
   max-width: 100%;
@@ -648,7 +655,7 @@ banner
   z-index: -1;
 }
 
-#bg-video::-webkit-media-controls {
+#bg-img::-webkit-media-controls {
   display: none !important;
 }
 
@@ -657,17 +664,20 @@ banner
   background-color: rgba(35, 45, 57, 0.8);
   top: 0;
   left: 0;
-  bottom: 7px;
+  bottom: 0px;
   width: 100%;
 }
 
 .main-banner .caption {
   text-align: center;
+  align-items: center;
   position: absolute;
-  width: 80%;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .main-banner .caption h6 {
@@ -967,6 +977,7 @@ footer
 footer {
   text-align: center;
   padding: 30px 0px;
+  font-weight: 600;
 }
 
 footer p {
@@ -981,106 +992,6 @@ footer p a {
 
 footer p a:hover {
   color: #ed563b;
-}
-
-/* 
----------------------------------------------
-preloader
---------------------------------------------- 
-*/
-
-.js-preloader {
-  position: fixed;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background-color: #232d39;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  justify-content: center;
-  opacity: 1;
-  visibility: visible;
-  z-index: 9999;
-  -webkit-transition: opacity 0.25s ease;
-  transition: opacity 0.25s ease;
-}
-
-.js-preloader.loaded {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-@-webkit-keyframes dot {
-  50% {
-    -webkit-transform: translateX(96px);
-    transform: translateX(96px);
-  }
-}
-
-@keyframes dot {
-  50% {
-    -webkit-transform: translateX(96px);
-    transform: translateX(96px);
-  }
-}
-
-@-webkit-keyframes dots {
-  50% {
-    -webkit-transform: translateX(-31px);
-    transform: translateX(-31px);
-  }
-}
-
-@keyframes dots {
-  50% {
-    -webkit-transform: translateX(-31px);
-    transform: translateX(-31px);
-  }
-}
-
-.preloader-inner {
-  position: relative;
-  width: 142px;
-  height: 40px;
-  background: #232d39;
-}
-
-.preloader-inner .dot {
-  position: absolute;
-  width: 16px;
-  height: 16px;
-  top: 12px;
-  left: 15px;
-  background: #fff;
-  border-radius: 50%;
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  -webkit-animation: dot 2.8s infinite;
-  animation: dot 2.8s infinite;
-}
-
-.preloader-inner .dots {
-  -webkit-transform: translateX(0);
-  transform: translateX(0);
-  margin-top: 12px;
-  margin-left: 31px;
-  -webkit-animation: dots 2.8s infinite;
-  animation: dots 2.8s infinite;
-}
-
-.preloader-inner .dots span {
-  display: block;
-  float: left;
-  width: 16px;
-  height: 16px;
-  margin-left: 16px;
-  background: #fff;
-  border-radius: 50%;
 }
 
 /* 
@@ -1120,5 +1031,13 @@ responsive
 @media (max-width: 450px) {
   .feature-item .right-content a.text-button {
     margin-left: 130px;
+  }
+
+  .main-banner .caption h2 {
+    font-size: 58px;
+  }
+
+  .main-banner .caption h6 {
+    font-size: 20px;
   }
 }
