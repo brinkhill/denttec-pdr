@@ -749,38 +749,8 @@ features
   font-weight: 500;
 }
 
-/*
----------------------------------------------
-subscribe
----------------------------------------------
-*/
-
-#call-to-action {
-  padding: 120px 0px;
-  background-image: url(../images/cta-bg.jpg);
-  background-position: center center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  text-align: center;
-}
-
-.cta-content h2 {
-  font-size: 36px;
-  text-transform: uppercase;
-  font-weight: 800;
-  color: #fff;
-  letter-spacing: 1px;
-}
-
-.cta-content h2 em {
-  font-style: normal;
-  color: #ed563b;
-}
-
-.cta-content p {
-  font-size: 16px;
-  color: #fff;
-  margin: 15px 0px 25px 0px;
+#theHR {
+  border-top: 3px solid red;
 }
 
 /*
@@ -885,6 +855,14 @@ trainers
 #trainers {
   background-color: #232d39;
   color: white;
+
+  align-items: center;
+  text-align: center;
+}
+
+.image-thumb img {
+  height: 60%;
+  width: 60%;
 }
 
 /* 
@@ -975,13 +953,14 @@ footer
 --------------------------------------------- 
 */
 footer {
+  background-color: #232d39;
   text-align: center;
   padding: 30px 0px;
   font-weight: 600;
 }
 
 footer p {
-  color: #232d39;
+  color: #fff;
   font-size: 13px;
 }
 
@@ -992,6 +971,14 @@ footer p a {
 
 footer p a:hover {
   color: #ed563b;
+}
+
+.contactfooter {
+  font-size: 17px;
+}
+
+.copyright {
+  padding-top: 10px;
 }
 
 /* 
